@@ -31,7 +31,7 @@ developing applications that use %{name}.
 rm -rf src
 rm -f src.tar.gz
 mkdir -p src
-wget -O src.tar.gz ${url}/archive/refs/tags/v%{basever}.tar.gz
+wget -O src.tar.gz %{url}/archive/refs/tags/v%{basever}.tar.gz
 tar --strip-components=1 -xzvf src.tar.gz -C src
 
 %build
