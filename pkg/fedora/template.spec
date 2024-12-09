@@ -13,6 +13,7 @@ URL:            https://github.com/facebook/yoga
 BuildRequires:  git
 BuildRequires:  tar
 BuildRequires:  wget
+BuildRequires:  sed
 BuildRequires:  gcc-c++
 BuildRequires:  cmake
 
@@ -36,6 +37,7 @@ tar --strip-components=1 -xzvf src.tar.gz -C src
 
 %build
 pushd src
+sed -i '/add_subdirectory(tests)/d' CMakeLists.txt
 %cmake
 %cmake_build
 popd
