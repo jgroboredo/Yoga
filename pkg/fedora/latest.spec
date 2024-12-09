@@ -55,5 +55,5 @@ popd
 %{_libdir}/cmake/yoga/
 
 %changelog
-* Sun Dec 08 2024 Eduardo Hopperdietzel <ehopperdietzel@gmail.com> - %{basever}-%{origrel}
+* Mon Dec 09 2024 Eduardo Hopperdietzel <ehopperdietzel@gmail.com> - %{basever}-%{origrel}
 - First release.
