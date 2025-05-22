@@ -1,0 +1,7 @@
+[wrap-git]
+url = https://github.com/facebook/yoga.git
+revision = v3.2.1
+depth = 1
+
+[provide]
+yoga = yoga_dep
