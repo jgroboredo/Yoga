@@ -1,4 +1,10 @@
-project('Yoga')
+project('Yoga',
+        'c','cpp',
+        default_options: [
+        'warning_level=2',
+        'cpp_std=c++20',
+    ]
+)
 
 cmake = import('cmake')
 
@@ -6,7 +12,7 @@ cmake = import('cmake')
 yoga_subproject = cmake.subproject('yoga')
 
 # Fetch the dependency object
-# yoga_cmake = yoga_subproject.dependency('yogacore')
+yoga_cmake = yoga_subproject.dependency('yogacore')
 
 # yoga = library(
 #     'Yoga',
